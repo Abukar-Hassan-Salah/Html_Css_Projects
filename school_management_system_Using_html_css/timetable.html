@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwalka Wax Akhris Ee Isbuuca</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background-color: #f4f6f8;
+            padding: 30px;
+        }
+        h2{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);  
+        }
+        thead{
+            background-color: #0f5b78;
+            color:#fff;
+        }
+        th,td{
+            border: 1px solid #0f782d;
+            padding :12px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        th{
+            font-size: 16px;
+        }
+        td strong{
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .day{
+            font-weight: bold;
+            background:#f0f8ff;
+        }
+
+     .nasiino {
+        color: #4b08f5;
+        font-style: italic;
+     }  
+     
+     @media (max-width :768px){
+         
+     table{
+        font-size:14px;
+     }
+     }
+
+    
+    </style>
+</head>
+<body>
+    <h2>Jadwalka Wax Akhris Ee Isbuuca</h2>
+
+    <table>
+        <thead>
+            <th>Maalmaha</th>
+            <th>Subax</th>
+            <th>Galab</th>
+            <th>Habeen</th>
+        </thead>
+        <tbody id="timetable"></tbody>
+    </table>
+    <script>
+        const data = [
+      { day: "Sabti", subax: "5:40 AM – 6:30 AM<br>Akhriis Study Skills", galab: "4:00 PM – 6:00 PM<br>Akhriis English", habeen: "7:00 PM – 8:00 PM<br>Akhriis Python" },
+      { day: "Axad", subax: "5:40 AM – 6:30 AM<br>Akhriis Computer Application", galab: "4:00 PM – 6:00 PM<br>Akhriis Arabic", habeen: "7:00 PM – 8:00 PM<br>Akhriis Study Skills" },
+      { day: "Isniin", subax: "Nasiino", galab: "4:00 PM – 6:00 PM<br>Akhriis English", habeen: "7:00 PM – 8:00 PM<br>Akhriis Study Skills" },
+      { day: "Talaado", subax: "5:40 AM – 6:30 AM<br>Akhriis English", galab: "4:00 PM – 6:00 PM<br>Akhriis Arabic", habeen: "7:00 PM – 8:00 PM<br>Akhriis Computer Application" },
+      { day: "Arbaco", subax: "5:40 AM – 6:30 AM<br>Akhriis Study Skills", galab: "Nasiino", habeen: "7:00 PM – 8:00 PM<br>Akhriis Python" },
+      { day: "Khamiis", subax: "5:40 AM – 6:30 AM<br>Akhriis Computer Application", galab: "4:00 PM – 6:00 PM<br>Akhriis English", habeen: "Nasiino" },
+      { day: "Jimco", subax: "Nasiino", galab: "Nasiino", habeen: "7:00 PM – 8:00 PM<br>Akhriis English" }
+    ];
+    const tbody=document.getElementById('timetable');
+    data.forEach(row=>{
+        const tr =document.createElement('tr');
+
+        tr.innerHTML=`
+        <td class="day">${row.day}</td>
+        <td class="${row.subax=='Nasiino' ? 'nasiino' :''}">${row.subax}</td>
+        <td class="${row.galab=='Nasiino' ? 'nasiino' :''}">${row.galab}</td>
+        <td class="${row.habeen=='Nasiino' ? 'nasiino' :''}">${row.habeen}</td>
+        `;
+        tbody.appendChild(tr);
+    });
+    </script>
+</body>
+</html>

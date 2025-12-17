@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>School Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="students.html">Students</a></li>
+                <li><a href="teachers.html" class="active">Teachers</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="attendence.html">Attendance</a></li>
+                <li><a href="grades.html">Grades</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 style="text-align: center;">Teachers List</h2>
+        <form id="teacherForm">
+            <input type="text" id="teacherId" placeholder="ID" required>
+            <input type="text" id="teacherName" placeholder="Name" required>
+            <input type="text" id="teacherSubject" placeholder="Subject" required>
+            <input type="text" id="teacherEmail" placeholder="Email" required>
+            <button type="submit">Add Teacher</button>
+
+        </form>
+        <table id="teacherTable">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Subject</th>
+                <th>Contact</th>
+            </tr>
+            <!-- Add teacher data here -->
+            
+        </table>
+    </main>
+    <footer>
+        <p>&copy; 2023 School Management System. All rights reserved.</p>
+    </footer>
+</body>
+<script src="school.js"></script>
+</html>

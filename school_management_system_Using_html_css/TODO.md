@@ -1,0 +1,8 @@
+- [x] Fix student form ID from 'StudentForm' to 'studentForm'
+- [x] Fix teacher form ID from 'addTeacherForm' to 'teacherForm'
+- [x] Update class form to use 'classId', 'className', 'classTeacher' and adjust table insertion
+- [x] Update grade form to use 'gradeId', 'gradeStudent', 'gradeScore' and adjust table insertion (note: subject missing in HTML)
+- [x] Add attendance form handler
+- [x] Add submit button to attendance form in HTML
+- [x] Add status input to attendance form
+- [x] Add subject input to grades.html

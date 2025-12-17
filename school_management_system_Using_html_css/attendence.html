@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>School Management System</h1>
+        <nav>
+            <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="students.html">Students</a></li>
+            <li><a href="teachers.html">Teachers</a></li>
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="attendence.html" class="active">Attendance</a></li>
+            <li><a href="grades.html">Grades</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 style="text-align: center;">Attendance Records</h2>
+        <form id="attendanceForm">
+            <input type="text" id="attId" placeholder="ID" required>
+            <input type="text" id="attStudent" placeholder="Student Name" required>
+            <input type="date" id="attDate" placeholder="Date" required>
+            <select id="attStatus" required>
+                <option value="">Select Status</option>
+                <option value="Present">Present</option>
+                <option value="Absent">Absent</option>
+            </select>
+            <button type="submit">Add Attendance</button>
+        </form>
+        <table id="attendanceTable">
+            <tr>
+                <th>ID</th>
+                <th>Student</th>
+                <th>Date</th>
+                <th>Status</th>
+            </tr>
+
+            
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 School Management System. All rights reserved.</p>
+    </footer>
+</body>
+<script src="school.js"></script>
+</html>

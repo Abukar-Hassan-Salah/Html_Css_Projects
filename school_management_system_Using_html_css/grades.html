@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Management System</title>
+    s<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>School Management System</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="students.html">Student</a></li>
+                <li><a href="teachers.html">Teachers</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="attendence.html">Attendance</a></li>
+                <li><a href="grades.html" class="active">Grades</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 style="text-align: center;">Grades</h2>
+    <form id="gradeForm">
+            <input type="text" id="gradeId" placeholder="ID" required>
+            <input type="text" id="gradeStudent" placeholder="Student Name" required>
+            <input type="text" id="gradeSubject" placeholder="Subject" required>
+            <input type="text" id="gradeScore" placeholder="Grade" required>
+
+            <button type="submit">Add Grade</button>
+    </form>
+        <table id="gradeTable">
+            <tr>
+                <th>ID</th>
+                <th>Student</th>
+                <th>Subject</th>
+                <th>Grade</th>
+            </tr>
+            
+        </table>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 School Management System. All Reserved.</p>
+    </footer>
+</body>
+<script src="school.js"></script>
+</html>
